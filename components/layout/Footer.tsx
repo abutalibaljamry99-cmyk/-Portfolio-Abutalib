@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-start gap-3 text-xs font-semibold uppercase tracking-[0.14em] sm:items-end">
           <Link href="mailto:ABUTALIBALJAMRY@GMAIL.COM" className="hover:underline">Email me</Link>
-          <Link href="https://www.linkedin.com/in/abutalib-eldaw/" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn ↗</Link>
+          <Link href="https://www.linkedin.com/in/abutalib-elnour-4919673b2/" target="_blank" rel="noreferrer" className="hover:underline">LinkedIn ↗</Link>
           <Link href="https://t.me/abutalib_eldaw" target="_blank" rel="noreferrer" className="hover:underline">Telegram ↗</Link>
           <p className="pt-3 font-normal tracking-normal text-brand-500">© {new Date().getFullYear()} Abutalib Eldaw Elnour</p>
         </div>

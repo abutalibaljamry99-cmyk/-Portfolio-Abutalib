@@ -70,6 +70,20 @@ export default function HomePage() {
                   Architecture, BIM, coordination, design development, and construction documentation.
                 </p>
               </div>
+
+              <Link
+                href="/projects"
+                className="group w-full max-w-[320px] rounded-[1.5rem] border border-white/20 bg-slate-950/35 p-4 backdrop-blur-md transition hover:border-sky-200/50 hover:bg-slate-950/50"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-[0.64rem] font-medium uppercase tracking-[0.26em] text-sky-200/80">Projects</p>
+                    <p className="mt-3 text-lg leading-7 text-white">King Salman Oasis & Royal Commission</p>
+                  </div>
+                  <span className="text-xl text-sky-100 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" aria-hidden="true">↗</span>
+                </div>
+                <p className="mt-2 text-sm text-slate-300">View selected architectural and BIM work.</p>
+              </Link>
             </div>
           </div>
         </div>
