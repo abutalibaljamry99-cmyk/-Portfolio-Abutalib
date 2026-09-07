@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Clean output for deployment
-  output: "standalone",
-  // Strict mode for better React practices
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
 };
 
