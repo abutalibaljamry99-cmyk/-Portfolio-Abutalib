@@ -49,7 +49,7 @@ Place project files in `public/projects/`, then reference them with a public pat
       caption: "Exterior walkthrough of the project.",
       poster: "/projects/dreams-hotel-poster.jpg",
     },
-  ],https://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/a6c1121175d251ed8504b6c32f9a5e528a4f776d/public/Dreams%20Hotel%20-1.png
+ https://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/34b1e1fae766498dddee64bc238cb18b6bae249b/lib/Dreams%20Hotel%20-1.png
 
 The project automatically appears on `/projects` and gets a detail page at `/projects/dreams-hotel`. Media is displayed as a photo gallery or a native video player on that detail page.
 https://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/0d1092ab4d895a42f34ff09c218e186b3aa3ab13/public/Dreams%20Hotel%20-1.png
