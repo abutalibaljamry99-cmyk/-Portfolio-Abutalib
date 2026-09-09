@@ -51,6 +51,6 @@ Place project files in `public/projects/`, then reference them with a public pat
     },
   ],
 }
-```
+```https://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/6c108fb624095ed5b4c5961fb13e3b20588d3629/Dreams%20Hotel%20(1).png
 
 The project automatically appears on `/projects` and gets a detail page at `/projects/dreams-hotel`. Media is displayed as a photo gallery or a native video player on that detail page.
