@@ -49,7 +49,7 @@ Place project files in `public/projects/`, then reference them with a public pat
       caption: "Exterior walkthrough of the project.",
       poster: "/projects/dreams-hotel-poster.jpg",
     },
-  ],public/projects/dreams-hotel-1.png
+  ],public/projects/dreams-hotel-1.pnghttps://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/78514cc5cb43aea0b9b48e2c30f6ac5a1ce80e33/Dreams%20Hotel%20(1).png
 }
 ```https://github.com/abutalibaljamry99-cmyk/-Portfolio-Abutalib/blob/6c108fb624095ed5b4c5961fb13e3b20588d3629/Dreams%20Hotel%20(1).png
 
