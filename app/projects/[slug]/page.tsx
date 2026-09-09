@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import PageWrapper from "@/components/ui/PageWrapper";
 import SectionWrapper from "@/components/ui/SectionWrapper";
@@ -41,7 +42,7 @@ export default async function ProjectDetailPage({ params }: Props) {
       <SectionWrapper id="project-description" className="grid gap-8 md:grid-cols-[1fr_2fr]"><p className="eyebrow">Overview</p><p className="max-w-2xl font-serif text-4xl leading-tight sm:text-5xl">{project.summary}</p>
       </SectionWrapper>
 
-      <SectionWrapper id="project-gallery" className="border-t border-brand-200"><p className="eyebrow mb-8">Working notes</p><div className="grid gap-px border border-brand-300 bg-brand-300 md:grid-cols-3">{["Design development", "Model coordination", "Delivery information"].map((item, index) => <div key={item} className="grid-paper min-h-56 bg-brand-100 p-5"><span className="font-serif text-4xl">0{index + 1}</span><span className="self-end text-sm">{item}</span></div>)}</div>
+      <SectionWrapper id="project-gallery" className="border-t border-brand-200"><p className="eyebrow mb-8">Project files / visual record</p>{project.media?.length ? <div className="grid gap-6 md:grid-cols-2">{project.media.map((media) => <figure key={media.src} className="overflow-hidden border border-brand-300 bg-brand-100">{media.kind === "image" ? <Image src={media.src} alt={media.alt} width={1600} height={900} className="h-auto w-full object-cover" /> : <video controls preload="metadata" poster={media.poster} className="aspect-video w-full bg-brand-950"><source src={media.src} /></video>}<figcaption className="border-t border-brand-300 p-4 text-sm leading-6 text-brand-600">{media.caption}</figcaption></figure>)}</div> : <div className="grid gap-px border border-brand-300 bg-brand-300 md:grid-cols-3">{["Design development", "Model coordination", "Delivery information"].map((item, index) => <div key={item} className="grid-paper min-h-56 bg-brand-100 p-5"><span className="font-serif text-4xl">0{index + 1}</span><span className="self-end text-sm">{item}</span></div>)}</div>}
       </SectionWrapper>
 
       <SectionWrapper id="project-nav" className="border-t border-brand-200"><div className="flex justify-between gap-6"><Link href="/projects" className="text-xs font-semibold uppercase tracking-[0.14em] underline underline-offset-4">← Back to projects</Link><Link href={`/projects/${projects.find((item) => item.slug !== project.slug)?.slug}`} className="text-right text-xs font-semibold uppercase tracking-[0.14em] underline underline-offset-4">Next project →</Link></div>
