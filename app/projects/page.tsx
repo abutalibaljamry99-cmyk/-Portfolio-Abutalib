@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import PageWrapper from "@/components/ui/PageWrapper";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-import Link from "next/link";
-import Image from "next/image";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
@@ -21,12 +21,7 @@ export default function ProjectsPage() {
         <div className="grid gap-px border border-brand-300 bg-brand-300 md:grid-cols-2">
           {projects.map((project) => (
             <Link key={project.slug} href={`/projects/${project.slug}`} className="group relative min-h-[28rem] overflow-hidden bg-brand-100 p-6 transition-colors sm:p-8">
-              <Image
-                src={project.coverImage}
-                alt={project.title}
-                fill
-                className="absolute inset-0 object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-30"
-              />
+              {project.coverImage && <Image src={project.coverImage} alt={project.title} fill sizes="(min-width: 768px) 50vw, 100vw" className="absolute inset-0 object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-30" />}
               <div className="relative flex items-start justify-between">
                 <span className="font-serif text-5xl">{project.number}</span>
                 <span className="text-xl transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
