@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageWrapper from "@/components/ui/PageWrapper";
 import SectionWrapper from "@/components/ui/SectionWrapper";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
@@ -12,11 +12,16 @@ export default function AboutPage() {
   return (
     <PageWrapper>
       <SectionWrapper id="about-header" className="pb-20 pt-28">
-        <p className="eyebrow">About / Profile</p><h1 className="mt-5 max-w-4xl text-6xl leading-[0.92] sm:text-8xl">Designing the<br /><span className="ml-[10%]">bigger picture.</span></h1>
+        <p className="eyebrow">About / Profile</p>
+        <h1 className="mt-5 max-w-4xl text-6xl leading-[0.92] sm:text-8xl">Designing the<br /><span className="ml-[10%]">bigger picture.</span></h1>
       </SectionWrapper>
 
       <SectionWrapper id="biography" className="grid gap-10 border-t border-brand-200 md:grid-cols-[1fr_2fr]">
-        <p className="eyebrow">Profile</p><div className="max-w-2xl space-y-6 text-lg leading-8 text-brand-700"><p>I am Abutalib Eldaw Elnour, an Architectural Designer and BIM Specialist based in Riyadh — Al Kharj, Saudi Arabia. My work sits at the intersection of creative design thinking, technical precision, and coordinated project delivery.</p><p>With experience in architectural design, construction documentation, BIM modeling, and multidisciplinary coordination, I help teams turn complex project requirements into clear, buildable information across design and execution stages.</p></div>
+        <p className="eyebrow">Profile</p>
+        <div className="max-w-2xl space-y-6 text-lg leading-8 text-brand-700">
+          <p>I am Abutalib Eldaw Elnour, an Architectural Designer and BIM Specialist based in Riyadh — Al Kharj, Saudi Arabia. My work sits at the intersection of creative design thinking, technical precision, and coordinated project delivery.</p>
+          <p>With experience in architectural design, construction documentation, BIM modeling, and multidisciplinary coordination, I help teams turn complex project requirements into clear, buildable information across design and execution stages.</p>
+        </div>
       </SectionWrapper>
 
       <SectionWrapper id="bim-expertise" className="border-y border-brand-200">
@@ -24,7 +29,8 @@ export default function AboutPage() {
       </SectionWrapper>
 
       <SectionWrapper id="skills">
-        <p className="eyebrow mb-8">Core competencies</p><div className="grid border-l border-t border-brand-300 sm:grid-cols-2 lg:grid-cols-4">{["Architectural design", "BIM modeling", "Construction documentation", "Clash detection", "3D visualization", "Project scheduling", "MEP coordination", "AI design tools"].map((skill) => <div key={skill} className="border-b border-r border-brand-300 p-5 text-lg">{skill}</div>)}</div>
+        <p className="eyebrow mb-8">Core competencies</p>
+        <div className="grid border-l border-t border-brand-300 sm:grid-cols-2 lg:grid-cols-4">{["Architectural design", "BIM modeling", "Construction documentation", "Clash detection", "3D visualization", "Project scheduling", "MEP coordination", "AI design tools"].map((skill) => <div key={skill} className="border-b border-r border-brand-300 p-5 text-lg">{skill}</div>)}</div>
       </SectionWrapper>
 
       <SectionWrapper id="experience" className="border-t border-brand-200">
@@ -32,7 +38,8 @@ export default function AboutPage() {
       </SectionWrapper>
 
       <SectionWrapper id="education" className="border-t border-brand-200">
-        <div className="grid gap-8 md:grid-cols-[1fr_2fr]"><p className="eyebrow">Continuous learning</p><div className="space-y-4">{["Autodesk Certified Professional (Revit) — In progress", "Cert Prep: Revit for Architectural Design — LinkedIn Learning", "Architectural Revit Course — Edraak", "Architectural Revit Course — Maarif", "Architectural Revit Course — Horizon Engineering Training Gate"].map((item) => <p key={item} className="border-b border-brand-300 pb-4 text-lg">{item}</p>)}</div></div><Link href="/contact" className="mt-12 inline-flex text-xs font-semibold uppercase tracking-[0.14em] underline underline-offset-4">Work together →</Link>
+        <div className="grid gap-8 md:grid-cols-[1fr_2fr]"><p className="eyebrow">Continuous learning</p><div className="space-y-4">{["Autodesk Certified Professional (Revit) — In progress", "Cert Prep: Revit for Architectural Design — LinkedIn Learning", "Architectural Revit Course — Edraak", "Architectural Revit Course — Maarif", "Architectural Revit Course — Horizon Engineering Training Gate"].map((item) => <p key={item} className="border-b border-brand-300 pb-4 text-lg">{item}</p>)}</div></div>
+        <Link href="/contact" className="mt-12 inline-flex text-xs font-semibold uppercase tracking-[0.14em] underline underline-offset-4">Work together →</Link>
       </SectionWrapper>
     </PageWrapper>
   );

@@ -15,6 +15,7 @@ export type Project = {
   summary: string;
   scope: string[];
   coverImage?: string;
+  gallery?: string[];
   media?: ProjectMedia[];
 };
 
